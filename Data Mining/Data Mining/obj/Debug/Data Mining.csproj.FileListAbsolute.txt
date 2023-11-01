@@ -1,0 +1,11 @@
+C:\Users\HP\Desktop\Data Mining\Data Mining\bin\Debug\Data Mining.exe.config
+C:\Users\HP\Desktop\Data Mining\Data Mining\bin\Debug\Data Mining.exe
+C:\Users\HP\Desktop\Data Mining\Data Mining\bin\Debug\Data Mining.pdb
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.AssemblyReference.cache
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data_Mining.FormMenu.resources
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data_Mining.FormGini.resources
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data_Mining.Properties.Resources.resources
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.exe
+C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.pdb
