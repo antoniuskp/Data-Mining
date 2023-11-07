@@ -29,7 +29,7 @@ namespace Data_Mining
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBoxDistance = new System.Windows.Forms.ComboBox();
+            this.comboBoxBestSplitMethod = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.listBoxBest = new System.Windows.Forms.ListBox();
@@ -38,19 +38,19 @@ namespace Data_Mining
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBest)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBoxDistance
+            // comboBoxBestSplitMethod
             // 
-            this.comboBoxDistance.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxDistance.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBoxDistance.FormattingEnabled = true;
-            this.comboBoxDistance.Items.AddRange(new object[] {
+            this.comboBoxBestSplitMethod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxBestSplitMethod.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBoxBestSplitMethod.FormattingEnabled = true;
+            this.comboBoxBestSplitMethod.Items.AddRange(new object[] {
             "Best Split dengan GINI",
             "Best Split dengan Entropy"});
-            this.comboBoxDistance.Location = new System.Drawing.Point(536, 15);
-            this.comboBoxDistance.Margin = new System.Windows.Forms.Padding(2);
-            this.comboBoxDistance.Name = "comboBoxDistance";
-            this.comboBoxDistance.Size = new System.Drawing.Size(294, 30);
-            this.comboBoxDistance.TabIndex = 19;
+            this.comboBoxBestSplitMethod.Location = new System.Drawing.Point(536, 15);
+            this.comboBoxBestSplitMethod.Margin = new System.Windows.Forms.Padding(2);
+            this.comboBoxBestSplitMethod.Name = "comboBoxBestSplitMethod";
+            this.comboBoxBestSplitMethod.Size = new System.Drawing.Size(294, 25);
+            this.comboBoxBestSplitMethod.TabIndex = 19;
             // 
             // label2
             // 
@@ -59,7 +59,7 @@ namespace Data_Mining
             this.label2.Location = new System.Drawing.Point(469, 16);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 25);
+            this.label2.Size = new System.Drawing.Size(59, 20);
             this.label2.TabIndex = 18;
             this.label2.Text = "Hasil :";
             // 
@@ -70,7 +70,7 @@ namespace Data_Mining
             this.label1.Location = new System.Drawing.Point(10, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 25);
+            this.label1.Size = new System.Drawing.Size(48, 20);
             this.label1.TabIndex = 17;
             this.label1.Text = "Data";
             // 
@@ -78,11 +78,11 @@ namespace Data_Mining
             // 
             this.listBoxBest.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxBest.FormattingEnabled = true;
-            this.listBoxBest.ItemHeight = 18;
+            this.listBoxBest.ItemHeight = 15;
             this.listBoxBest.Location = new System.Drawing.Point(472, 53);
             this.listBoxBest.Margin = new System.Windows.Forms.Padding(2);
             this.listBoxBest.Name = "listBoxBest";
-            this.listBoxBest.Size = new System.Drawing.Size(470, 418);
+            this.listBoxBest.Size = new System.Drawing.Size(470, 409);
             this.listBoxBest.TabIndex = 16;
             // 
             // buttonBuka
@@ -113,7 +113,7 @@ namespace Data_Mining
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(956, 535);
-            this.Controls.Add(this.comboBoxDistance);
+            this.Controls.Add(this.comboBoxBestSplitMethod);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBoxBest);
@@ -130,7 +130,7 @@ namespace Data_Mining
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBoxDistance;
+        private System.Windows.Forms.ComboBox comboBoxBestSplitMethod;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox listBoxBest;
