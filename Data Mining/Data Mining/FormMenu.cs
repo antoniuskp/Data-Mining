@@ -56,7 +56,7 @@ namespace Data_Mining
         //gini
         private void button1_Click(object sender, EventArgs e)
         {
-            FormGini form = new FormGini();
+            FormBestSplit form = new FormBestSplit();
             form.Owner = this;
             form.ShowDialog();
         }
