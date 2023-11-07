@@ -16,7 +16,7 @@ namespace Data_Mining
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormProximity());
+            Application.Run(new FormMenu());
         }
     }
 }
