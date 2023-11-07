@@ -19,28 +19,44 @@ namespace Data_Mining
 
         private void giniToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormGini form = new FormGini();
-            form.Owner = this;
-            form.ShowDialog();
+            
         }
 
         private void proxymityToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormProximity form = new FormProximity();
-            form.Owner = this;
-            form.ShowDialog();
+            
         }
 
         private void kmeansToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FormKmeans form = new FormKmeans();
-            form.Owner = this;
-            form.ShowDialog();
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonProxMat_Click(object sender, EventArgs e)
+        {
+            FormProximity form = new FormProximity();
+            form.Owner = this;
+            form.ShowDialog(); 
+        }
+
+        //gini
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormGini form = new FormGini();
+            form.Owner = this;
+            form.ShowDialog();
+        }
+
+        private void buttonKMeans_Click(object sender, EventArgs e)
+        {
+            FormKmeans form = new FormKmeans();
+            form.Owner = this;
+            form.ShowDialog();
         }
     }
 }

@@ -9,3 +9,16 @@ C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.Generat
 C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.exe
 C:\Users\HP\Desktop\Data Mining\Data Mining\obj\Debug\Data Mining.pdb
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.exe.config
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.exe
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.pdb
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.AssemblyReference.cache
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.SuggestedBindingRedirects.cache
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormMenu.resources
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormGini.resources
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormProximity.resources
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.Properties.Resources.resources
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.GenerateResource.cache
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.CoreCompileInputs.cache
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.exe
+C:\Users\Janet Deby Marlien M\Dropbox\PC\Downloads\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.pdb

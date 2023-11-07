@@ -29,12 +29,146 @@ namespace Data_Mining
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonImport = new System.Windows.Forms.Button();
+            this.dataGridViewData = new System.Windows.Forms.DataGridView();
+            this.radioButtonManhattan = new System.Windows.Forms.RadioButton();
+            this.radioButtonEuclidean = new System.Windows.Forms.RadioButton();
+            this.radioButtonSupremum = new System.Windows.Forms.RadioButton();
+            this.dataGridViewHasil = new System.Windows.Forms.DataGridView();
+            this.buttonExport = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHasil)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // buttonImport
+            // 
+            this.buttonImport.Font = new System.Drawing.Font("Gotham Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonImport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonImport.Location = new System.Drawing.Point(21, 24);
+            this.buttonImport.Name = "buttonImport";
+            this.buttonImport.Size = new System.Drawing.Size(99, 72);
+            this.buttonImport.TabIndex = 2;
+            this.buttonImport.Text = "Import File";
+            this.buttonImport.UseVisualStyleBackColor = true;
+            this.buttonImport.Click += new System.EventHandler(this.buttonImport_Click);
+            // 
+            // dataGridViewData
+            // 
+            this.dataGridViewData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewData.Location = new System.Drawing.Point(126, 24);
+            this.dataGridViewData.Name = "dataGridViewData";
+            this.dataGridViewData.RowHeadersWidth = 51;
+            this.dataGridViewData.RowTemplate.Height = 24;
+            this.dataGridViewData.Size = new System.Drawing.Size(815, 211);
+            this.dataGridViewData.TabIndex = 3;
+            // 
+            // radioButtonManhattan
+            // 
+            this.radioButtonManhattan.AutoSize = true;
+            this.radioButtonManhattan.Font = new System.Drawing.Font("Gotham Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonManhattan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonManhattan.Location = new System.Drawing.Point(9, 22);
+            this.radioButtonManhattan.Name = "radioButtonManhattan";
+            this.radioButtonManhattan.Size = new System.Drawing.Size(256, 24);
+            this.radioButtonManhattan.TabIndex = 5;
+            this.radioButtonManhattan.TabStop = true;
+            this.radioButtonManhattan.Text = "Manhattan Distance (r = 1)";
+            this.radioButtonManhattan.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonEuclidean
+            // 
+            this.radioButtonEuclidean.AutoSize = true;
+            this.radioButtonEuclidean.Font = new System.Drawing.Font("Gotham Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonEuclidean.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonEuclidean.Location = new System.Drawing.Point(364, 24);
+            this.radioButtonEuclidean.Name = "radioButtonEuclidean";
+            this.radioButtonEuclidean.Size = new System.Drawing.Size(251, 24);
+            this.radioButtonEuclidean.TabIndex = 6;
+            this.radioButtonEuclidean.TabStop = true;
+            this.radioButtonEuclidean.Text = "Euclidean Distance (r = 2)";
+            this.radioButtonEuclidean.UseVisualStyleBackColor = true;
+            // 
+            // radioButtonSupremum
+            // 
+            this.radioButtonSupremum.AutoSize = true;
+            this.radioButtonSupremum.Font = new System.Drawing.Font("Gotham Medium", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonSupremum.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonSupremum.Location = new System.Drawing.Point(693, 22);
+            this.radioButtonSupremum.Name = "radioButtonSupremum";
+            this.radioButtonSupremum.Size = new System.Drawing.Size(263, 24);
+            this.radioButtonSupremum.TabIndex = 7;
+            this.radioButtonSupremum.TabStop = true;
+            this.radioButtonSupremum.Text = "Supremum Distance (r = ∞)";
+            this.radioButtonSupremum.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewHasil
+            // 
+            this.dataGridViewHasil.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewHasil.Location = new System.Drawing.Point(21, 354);
+            this.dataGridViewHasil.Name = "dataGridViewHasil";
+            this.dataGridViewHasil.RowHeadersWidth = 51;
+            this.dataGridViewHasil.RowTemplate.Height = 24;
+            this.dataGridViewHasil.Size = new System.Drawing.Size(840, 202);
+            this.dataGridViewHasil.TabIndex = 8;
+            // 
+            // buttonExport
+            // 
+            this.buttonExport.Font = new System.Drawing.Font("Gotham Medium", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExport.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonExport.Location = new System.Drawing.Point(918, 513);
+            this.buttonExport.Name = "buttonExport";
+            this.buttonExport.Size = new System.Drawing.Size(99, 72);
+            this.buttonExport.TabIndex = 9;
+            this.buttonExport.Text = "Export File";
+            this.buttonExport.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.radioButtonSupremum);
+            this.groupBox1.Controls.Add(this.radioButtonEuclidean);
+            this.groupBox1.Controls.Add(this.radioButtonManhattan);
+            this.groupBox1.Font = new System.Drawing.Font("Gotham Book", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.groupBox1.Location = new System.Drawing.Point(21, 266);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(996, 64);
+            this.groupBox1.TabIndex = 10;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Similarity and Dissimilarity";
+            // 
+            // FormProximity
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "FormProximity";
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(1055, 620);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.buttonExport);
+            this.Controls.Add(this.dataGridViewHasil);
+            this.Controls.Add(this.dataGridViewData);
+            this.Controls.Add(this.buttonImport);
+            this.Name = "FormProximity";
+            this.Text = "Proximity Matrix";
+            this.Load += new System.EventHandler(this.FormProximity_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHasil)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonImport;
+        private System.Windows.Forms.DataGridView dataGridViewData;
+        private System.Windows.Forms.RadioButton radioButtonManhattan;
+        private System.Windows.Forms.RadioButton radioButtonEuclidean;
+        private System.Windows.Forms.RadioButton radioButtonSupremum;
+        private System.Windows.Forms.DataGridView dataGridViewHasil;
+        private System.Windows.Forms.Button buttonExport;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

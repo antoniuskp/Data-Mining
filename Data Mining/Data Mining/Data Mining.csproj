@@ -70,13 +70,18 @@
     <Compile Include="FormProximity.Designer.cs">
       <DependentUpon>FormProximity.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gini.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProximityMatrix.cs" />
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormGini.resx">
       <DependentUpon>FormGini.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProximity.resx">
+      <DependentUpon>FormProximity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

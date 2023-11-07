@@ -29,70 +29,67 @@ namespace Data_Mining
         /// </summary>
         private void InitializeComponent()
         {
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.giniToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.proxymityToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.kmeansToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.buttonProxMat = new System.Windows.Forms.Button();
+            this.buttonGini = new System.Windows.Forms.Button();
+            this.buttonKMeans = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // buttonProxMat
             // 
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.giniToolStripMenuItem,
-            this.proxymityToolStripMenuItem,
-            this.kmeansToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 28);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.buttonProxMat.Font = new System.Drawing.Font("Gotham Medium", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProxMat.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonProxMat.Location = new System.Drawing.Point(177, 105);
+            this.buttonProxMat.Name = "buttonProxMat";
+            this.buttonProxMat.Size = new System.Drawing.Size(192, 94);
+            this.buttonProxMat.TabIndex = 1;
+            this.buttonProxMat.Text = "Proximity Matrix";
+            this.buttonProxMat.UseVisualStyleBackColor = true;
+            this.buttonProxMat.Click += new System.EventHandler(this.buttonProxMat_Click);
             // 
-            // giniToolStripMenuItem
+            // buttonGini
             // 
-            this.giniToolStripMenuItem.Name = "giniToolStripMenuItem";
-            this.giniToolStripMenuItem.Size = new System.Drawing.Size(49, 24);
-            this.giniToolStripMenuItem.Text = "Gini";
-            this.giniToolStripMenuItem.Click += new System.EventHandler(this.giniToolStripMenuItem_Click);
+            this.buttonGini.Font = new System.Drawing.Font("Gotham Medium", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGini.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonGini.Location = new System.Drawing.Point(390, 105);
+            this.buttonGini.Name = "buttonGini";
+            this.buttonGini.Size = new System.Drawing.Size(192, 94);
+            this.buttonGini.TabIndex = 2;
+            this.buttonGini.Text = "Gini";
+            this.buttonGini.UseVisualStyleBackColor = true;
+            this.buttonGini.Click += new System.EventHandler(this.button1_Click);
             // 
-            // proxymityToolStripMenuItem
+            // buttonKMeans
             // 
-            this.proxymityToolStripMenuItem.Name = "proxymityToolStripMenuItem";
-            this.proxymityToolStripMenuItem.Size = new System.Drawing.Size(88, 24);
-            this.proxymityToolStripMenuItem.Text = "Proxymity";
-            this.proxymityToolStripMenuItem.Click += new System.EventHandler(this.proxymityToolStripMenuItem_Click);
+            this.buttonKMeans.Font = new System.Drawing.Font("Gotham Medium", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonKMeans.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.buttonKMeans.Location = new System.Drawing.Point(288, 225);
+            this.buttonKMeans.Name = "buttonKMeans";
+            this.buttonKMeans.Size = new System.Drawing.Size(192, 94);
+            this.buttonKMeans.TabIndex = 3;
+            this.buttonKMeans.Text = "K-Means";
+            this.buttonKMeans.UseVisualStyleBackColor = true;
+            this.buttonKMeans.Click += new System.EventHandler(this.buttonKMeans_Click);
             // 
-            // kmeansToolStripMenuItem
-            // 
-            this.kmeansToolStripMenuItem.Name = "kmeansToolStripMenuItem";
-            this.kmeansToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.kmeansToolStripMenuItem.Text = "K-means";
-            this.kmeansToolStripMenuItem.Click += new System.EventHandler(this.kmeansToolStripMenuItem_Click);
-            // 
-            // Form1
+            // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.buttonKMeans);
+            this.Controls.Add(this.buttonGini);
+            this.Controls.Add(this.buttonProxMat);
+            this.Name = "FormMenu";
+            this.Text = "Compute Dataset";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem giniToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem proxymityToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem kmeansToolStripMenuItem;
+        private System.Windows.Forms.Button buttonProxMat;
+        private System.Windows.Forms.Button buttonGini;
+        private System.Windows.Forms.Button buttonKMeans;
     }
 }
 
