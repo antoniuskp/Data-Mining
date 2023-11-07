@@ -34,14 +34,23 @@ namespace Data_Mining
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            this.IsMdiContainer = true;
         }
 
         private void buttonProxMat_Click(object sender, EventArgs e)
         {
-            FormProximity form = new FormProximity();
-            form.Owner = this;
-            form.ShowDialog(); 
+            Form form = Application.OpenForms["FormProximity"];
+            if (form == null)
+            {
+                FormProximity formProx = new FormProximity();
+                formProx.MdiParent = this;
+                formProx.Show();
+            }
+            else
+            {
+                form.Show();
+                form.BringToFront();
+            }
         }
 
         //gini

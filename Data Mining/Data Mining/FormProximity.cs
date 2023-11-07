@@ -97,5 +97,10 @@ namespace Data_Mining
             // mengecek type file harus .csv
             return fileName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase);
         }
+
+        private void radioButtonManhattan_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
