@@ -52,12 +52,6 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBestSplit.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBestSplit.Designer.cs">
-      <DependentUpon>FormBestSplit.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormKmeans.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,15 +64,11 @@
     <Compile Include="FormProximity.Designer.cs">
       <DependentUpon>FormProximity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Gini.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProximityMatrix.cs" />
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBestSplit.resx">
-      <DependentUpon>FormBestSplit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProximity.resx">
       <DependentUpon>FormProximity.cs</DependentUpon>

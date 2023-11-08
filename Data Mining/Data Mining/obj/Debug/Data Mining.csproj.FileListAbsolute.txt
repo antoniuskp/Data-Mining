@@ -34,10 +34,12 @@ C:\Users\USER\Documents\GitHub\Data-Mining\Data Mining\Data Mining\obj\Debug\Dat
 C:\Users\USER\Documents\GitHub\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.pdb
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.AssemblyReference.cache
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormMenu.resources
-C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormBestSplit.resources
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.FormProximity.resources
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data_Mining.Properties.Resources.resources
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.GenerateResource.cache
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.csproj.CoreCompileInputs.cache
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.exe
 C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\obj\Debug\Data Mining.pdb
+C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.exe.config
+C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.exe
+C:\Users\fanny\Documents\College Life\Semester 3\Data Mining\Data-Mining\Data Mining\Data Mining\bin\Debug\Data Mining.pdb

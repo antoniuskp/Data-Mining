@@ -39,6 +39,7 @@ namespace Data_Mining
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHasil)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -175,12 +176,22 @@ namespace Data_Mining
             this.label2.TabIndex = 12;
             this.label2.Text = "Hasil";
             // 
+            // labelText
+            // 
+            this.labelText.AutoSize = true;
+            this.labelText.Location = new System.Drawing.Point(1002, 486);
+            this.labelText.Name = "labelText";
+            this.labelText.Size = new System.Drawing.Size(51, 20);
+            this.labelText.TabIndex = 13;
+            this.labelText.Text = "label3";
+            // 
             // FormProximity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1400, 909);
+            this.Controls.Add(this.labelText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -213,5 +224,6 @@ namespace Data_Mining
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelText;
     }
 }
