@@ -108,7 +108,7 @@ namespace Data_Mining
             int column = dataGridViewData.ColumnCount;
             int row = dataGridViewData.RowCount;
 
-            listBoxText.Items.Add($"Column : {column}, row : {row}");
+            
 
         }
     }

@@ -9,9 +9,10 @@ namespace Data_Mining
 {
     public class ProximityMatrix
     {
-        public int[,] EucladeanDistance()
+        public int EucladeanDistance()
         {
-
+            int hasil = 0;
+            return hasil;
         }
 
     }
