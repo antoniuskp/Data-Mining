@@ -105,11 +105,31 @@ namespace Data_Mining
 
         private void radioButtonEuclidean_CheckedChanged(object sender, EventArgs e)
         {
-            int column = dataGridViewData.ColumnCount;
-            int row = dataGridViewData.RowCount;
+            if(dataGridViewData.RowCount > 0 && dataGridViewData.ColumnCount > 0)
+            {
+                int row = dataGridViewData.RowCount;
+                int col = dataGridViewData.ColumnCount;
 
-            labelText.Text = $"Row : {row} & Column : {column}";
+                int[,] copyCSV = new int[row, col];
+
+                //looping row 
+                for (int i = 1; i <= dataGridViewData.ColumnCount; i++)
+                {
+                    //looping column
+                    for (int j = 1; j <= dataGridViewData.RowCount; j++)
+                    {
+                        copyCSV[j - 1, i - 1] = (int) dataGridViewData.Rows[i - 1].Cells[j - 1].Value;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please input value!");
+            }
+           
+
 
         }
+            
     }
 }

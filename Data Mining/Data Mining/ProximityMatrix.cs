@@ -9,10 +9,12 @@ namespace Data_Mining
 {
     public class ProximityMatrix
     {
-        public int EucladeanDistance()
+        public double EucladeanDistance(double x1, double x2, double y1, double y2)
         {
-            int hasil = 0;
+            //menghitung hasil
+            double hasil = (double) Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
             return hasil;
+
         }
 
     }
