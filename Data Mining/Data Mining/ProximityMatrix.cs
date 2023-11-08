@@ -9,10 +9,10 @@ namespace Data_Mining
 {
     public class ProximityMatrix
     {
-        /*public int [,] ManhattanDistance()
+        public int[,] EucladeanDistance()
         {
 
         }
-        */
+
     }
 }

@@ -102,5 +102,14 @@ namespace Data_Mining
         {
 
         }
+
+        private void radioButtonEuclidean_CheckedChanged(object sender, EventArgs e)
+        {
+            int column = dataGridViewData.ColumnCount;
+            int row = dataGridViewData.RowCount;
+
+            listBoxText.Items.Add($"Column : {column}, row : {row}");
+
+        }
     }
 }
