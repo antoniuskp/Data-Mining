@@ -18,17 +18,12 @@ namespace Data_Mining
             InitializeComponent();
         }
 
-        private void openFile_FileOk(object sender, CancelEventArgs e)
-        {
-
-
-        }
-
         private void FormProximity_Load(object sender, EventArgs e)
         {
 
         }
 
+        ProximityMatrix prox = new ProximityMatrix();
         private void buttonImport_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -105,30 +100,46 @@ namespace Data_Mining
 
         private void radioButtonEuclidean_CheckedChanged(object sender, EventArgs e)
         {
+            dataGridViewHasil.Rows.Clear();
+            dataGridViewHasil.Columns.Clear();
+
             if(dataGridViewData.RowCount > 0 && dataGridViewData.ColumnCount > 0)
             {
-                int row = dataGridViewData.RowCount;
-                int col = dataGridViewData.ColumnCount;
+                FormatHasil(prox.EucladeanDistance(dataGridViewData));
 
-                int[,] copyCSV = new int[row, col];
 
-                //looping row 
-                for (int i = 1; i <= dataGridViewData.ColumnCount; i++)
-                {
-                    //looping column
-                    for (int j = 1; j <= dataGridViewData.RowCount; j++)
-                    {
-                        copyCSV[j - 1, i - 1] = (int) dataGridViewData.Rows[i - 1].Cells[j - 1].Value;
-                    }
-                }
             }
             else
             {
-                MessageBox.Show("Please input value!");
+                MessageBox.Show("Please input the file!");
             }
            
 
 
+        }
+
+        private void FormatHasil(double[,] prox)
+        {
+            int newRow = prox.GetLength(0);
+            int newCol = prox.GetLength(1);
+
+            //membuat kolom pada dataGridViewHasil
+
+            dataGridViewHasil.ColumnCount = newCol;
+
+            for (int row = 0; row < newRow; row++)
+            {
+                //membuat row
+                DataGridViewRow dRow = new DataGridViewRow();
+                dRow.CreateCells(dataGridViewHasil);
+                
+                //menginputkan value pada setiap kolomnya
+                for (int col = 0; col < newCol; col++)
+                {
+                    dRow.Cells[col].Value = prox[row, col];
+                }
+                dataGridViewHasil.Rows.Add(dRow);
+            }
         }
             
     }
