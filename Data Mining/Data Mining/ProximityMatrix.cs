@@ -11,24 +11,24 @@ namespace Data_Mining
     {
         public double[,] EucladeanDistance(DataGridView datagrid)
         {
-            double[,] hasil = new double[datagrid.RowCount,datagrid.RowCount];
+            double[,] hasil = new double[datagrid.Rows.Count - 1, datagrid.Rows.Count - 1];
 
-            for (int i = 1; i <= datagrid.RowCount; i++) 
+            for (int i = 0; i < datagrid.Rows.Count - 1; i++)
             {
-                double total = 0;
-                double jarak;
-                for(int j = 1; j <= datagrid.RowCount; j++)
+                for (int j = 0; j < datagrid.Rows.Count - 1; j++)
                 {
-                    for (int k = 0; k < datagrid.ColumnCount; k++)
+                    double total = 0;
+                    double jarak;
+                    for (int k = 0; k < datagrid.Columns.Count; k++)
                     {
-                        double titik2 = double.Parse(datagrid.Rows[j].Cells[k].Value.ToString());
-                        double titik1 = double.Parse(datagrid.Rows[i].Cells[k].Value.ToString());
+                        double titik1 = Convert.ToDouble(datagrid.Rows[i].Cells[k].Value);
+                        double titik2 = Convert.ToDouble(datagrid.Rows[j].Cells[k].Value);
 
                         double sum = Math.Pow(Math.Abs(titik2 - titik1), 2);
                         total += sum;
                     }
 
-                    jarak = Math.Round(Math.Sqrt(total), 3); //hasil pertambahan diakar
+                    jarak = Math.Round(Math.Sqrt(total), 4); //hasil pertambahan diakar
 
                     hasil[i, j] = jarak;
 
@@ -36,6 +36,62 @@ namespace Data_Mining
             }
             return hasil;
         }
+        public double[,] SupremumDistance(DataGridView datagrid)
+        {
+            double[,] hasil = new double[datagrid.Rows.Count - 1, datagrid.Rows.Count - 1];
 
+            for (int i = 0; i < datagrid.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < datagrid.Rows.Count - 1; j++)
+                {
+
+                    double jarak = 0.0;
+                    for (int k = 0; k < datagrid.Columns.Count; k++)
+                    {
+                        double titik1 = Convert.ToDouble(datagrid.Rows[i].Cells[k].Value);
+                        double titik2 = Convert.ToDouble(datagrid.Rows[j].Cells[k].Value);
+
+                        double dot = Math.Abs(titik2 - titik1);
+
+                        //mencari nilai tertinggi
+                        if (dot > jarak)
+                        {
+                            jarak = dot;
+                        }
+
+                    }
+
+                    hasil[i, j] = jarak;
+
+                }
+            }
+            return hasil;
+        }
+        public double[,] CityBlokDistance(DataGridView datagrid)
+        {
+            double[,] hasil = new double[datagrid.Rows.Count - 1, datagrid.Rows.Count - 1];
+
+            for (int i = 0; i < datagrid.Rows.Count - 1; i++)
+            {
+                for (int j = 0; j < datagrid.Rows.Count - 1; j++)
+                {
+
+                    double jarak = 0.0;
+                    for (int k = 0; k < datagrid.Columns.Count; k++)
+                    {
+                        double titik1 = Convert.ToDouble(datagrid.Rows[i].Cells[k].Value);
+                        double titik2 = Convert.ToDouble(datagrid.Rows[j].Cells[k].Value);
+
+                        double dot = Math.Abs(titik2 - titik1);
+                        jarak += dot;
+
+                    }
+
+                    hasil[i, j] = jarak;
+
+                }
+            }
+            return hasil;
+        }
     }
 }

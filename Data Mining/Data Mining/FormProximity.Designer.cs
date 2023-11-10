@@ -31,7 +31,7 @@ namespace Data_Mining
         {
             this.buttonImport = new System.Windows.Forms.Button();
             this.dataGridViewData = new System.Windows.Forms.DataGridView();
-            this.radioButtonManhattan = new System.Windows.Forms.RadioButton();
+            this.radioButtonCityBlok = new System.Windows.Forms.RadioButton();
             this.radioButtonEuclidean = new System.Windows.Forms.RadioButton();
             this.radioButtonSupremum = new System.Windows.Forms.RadioButton();
             this.dataGridViewHasil = new System.Windows.Forms.DataGridView();
@@ -39,7 +39,6 @@ namespace Data_Mining
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelText = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewHasil)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -70,20 +69,20 @@ namespace Data_Mining
             this.dataGridViewData.Size = new System.Drawing.Size(917, 264);
             this.dataGridViewData.TabIndex = 3;
             // 
-            // radioButtonManhattan
+            // radioButtonCityBlok
             // 
-            this.radioButtonManhattan.AutoSize = true;
-            this.radioButtonManhattan.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonManhattan.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.radioButtonManhattan.Location = new System.Drawing.Point(26, 30);
-            this.radioButtonManhattan.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.radioButtonManhattan.Name = "radioButtonManhattan";
-            this.radioButtonManhattan.Size = new System.Drawing.Size(292, 29);
-            this.radioButtonManhattan.TabIndex = 5;
-            this.radioButtonManhattan.TabStop = true;
-            this.radioButtonManhattan.Text = "Manhattan Distance (r = 1)";
-            this.radioButtonManhattan.UseVisualStyleBackColor = true;
-            this.radioButtonManhattan.CheckedChanged += new System.EventHandler(this.radioButtonManhattan_CheckedChanged);
+            this.radioButtonCityBlok.AutoSize = true;
+            this.radioButtonCityBlok.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonCityBlok.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.radioButtonCityBlok.Location = new System.Drawing.Point(26, 30);
+            this.radioButtonCityBlok.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.radioButtonCityBlok.Name = "radioButtonCityBlok";
+            this.radioButtonCityBlok.Size = new System.Drawing.Size(275, 29);
+            this.radioButtonCityBlok.TabIndex = 5;
+            this.radioButtonCityBlok.TabStop = true;
+            this.radioButtonCityBlok.Text = "City Blok Distance (r = 1)";
+            this.radioButtonCityBlok.UseVisualStyleBackColor = true;
+            this.radioButtonCityBlok.CheckedChanged += new System.EventHandler(this.radioButtonCityBlok_CheckedChanged);
             // 
             // radioButtonEuclidean
             // 
@@ -113,6 +112,7 @@ namespace Data_Mining
             this.radioButtonSupremum.TabStop = true;
             this.radioButtonSupremum.Text = "Supremum Distance (r = ∞)";
             this.radioButtonSupremum.UseVisualStyleBackColor = true;
+            this.radioButtonSupremum.CheckedChanged += new System.EventHandler(this.radioButtonSupremum_CheckedChanged);
             // 
             // dataGridViewHasil
             // 
@@ -137,12 +137,13 @@ namespace Data_Mining
             this.buttonExport.TabIndex = 9;
             this.buttonExport.Text = "Export File";
             this.buttonExport.UseVisualStyleBackColor = true;
+            this.buttonExport.Click += new System.EventHandler(this.buttonExport_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.radioButtonSupremum);
             this.groupBox1.Controls.Add(this.radioButtonEuclidean);
-            this.groupBox1.Controls.Add(this.radioButtonManhattan);
+            this.groupBox1.Controls.Add(this.radioButtonCityBlok);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.groupBox1.Location = new System.Drawing.Point(24, 355);
@@ -176,22 +177,12 @@ namespace Data_Mining
             this.label2.TabIndex = 12;
             this.label2.Text = "Hasil";
             // 
-            // labelText
-            // 
-            this.labelText.AutoSize = true;
-            this.labelText.Location = new System.Drawing.Point(1002, 486);
-            this.labelText.Name = "labelText";
-            this.labelText.Size = new System.Drawing.Size(51, 20);
-            this.labelText.TabIndex = 13;
-            this.labelText.Text = "label3";
-            // 
             // FormProximity
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(1400, 909);
-            this.Controls.Add(this.labelText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
@@ -216,7 +207,7 @@ namespace Data_Mining
 
         private System.Windows.Forms.Button buttonImport;
         private System.Windows.Forms.DataGridView dataGridViewData;
-        private System.Windows.Forms.RadioButton radioButtonManhattan;
+        private System.Windows.Forms.RadioButton radioButtonCityBlok;
         private System.Windows.Forms.RadioButton radioButtonEuclidean;
         private System.Windows.Forms.RadioButton radioButtonSupremum;
         private System.Windows.Forms.DataGridView dataGridViewHasil;
@@ -224,6 +215,5 @@ namespace Data_Mining
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label labelText;
     }
 }
